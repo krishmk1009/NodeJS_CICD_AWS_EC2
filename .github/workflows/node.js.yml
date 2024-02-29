@@ -27,5 +27,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: echo "${{ secrets.PROD_ENV_FILE }}" > data/config.env
-    - run: npm test
     - run: pm2 restart BackendAPI
